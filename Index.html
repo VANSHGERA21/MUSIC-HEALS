@@ -178,7 +178,7 @@
 
         .dropdown-menu {
             position: absolute;
-            top: 100%;
+            bottom: 100%;
             left: 50%;
             transform: translateX(-50%);
             background: rgba(26, 26, 46, 0.95);
@@ -190,7 +190,7 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
             z-index: 100;
-            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
         .dropdown-menu.show {
@@ -199,7 +199,7 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+            from { opacity: 0; transform: translateX(-50%) translateY(10px); }
             to { opacity: 1; transform: translateX(-50%) translateY(0); }
         }
 
